@@ -1,0 +1,110 @@
+body {
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+  height: auto;
+  overflow-x: hidden;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0; 
+}
+
+::-webkit-scrollbar {
+  width: 6px; 
+  height: 60px; 
+}
+
+::-webkit-scrollbar-track {
+  background: #977474; /* Light gray background */
+  border-radius: 10px; /* Rounded corners */
+}
+
+::-webkit-scrollbar-track:hover {
+  background-color: rgb(78, 76, 229);
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+}
+
+.App {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+.Get {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.adfa {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0;
+}
+
+.card {
+  box-shadow: rgba(12, 12, 12, 0.3) 2px 2px 3px 1px,
+    rgb(20, 20, 20, 0.3) -2px -2px 2px;
+  width: 15%;
+  max-width: 300px;
+  height: auto;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: white;
+  border-radius: 8px;
+  margin: auto;
+  margin-top: 1%;
+}
+
+#data,
+#title {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  padding: 5px;
+  font-size: 0.9rem;
+}
+
+#api_Image {
+  width: 100%;
+  height: auto;
+  border-bottom: 1px solid #ddd;
+  border-radius: 8px 8px 0 0;
+}
+
+@media screen and (max-width: 500px) {
+  .card {
+    width: 45%;
+    margin-bottom: 4%;
+  }
+}
+
+@media screen and (min-width: 501px) and (max-width: 700px) {
+  .card {
+    width: 40%;
+    margin-bottom: 3%;
+  }
+}
+
+@media screen and (min-width: 701px) and (max-width: 1020px) {
+  .card {
+    width: 30%;
+    margin-bottom: 2%;
+  }
+}
+
+@media screen and (min-width: 1021px) and (max-width: 1520px) {
+  .card {
+    width: 30%;
+  }
+}
