@@ -5,7 +5,7 @@ const test = async () => {
     });
 
     if (!abc.ok) {
-      throw new Error("http error"); // when respone is failed
+      throw new Error("http error : "); // when respone is failed
     }
     const data = await abc.json();
     console.log(data);

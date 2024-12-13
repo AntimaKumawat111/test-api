@@ -11,6 +11,9 @@ body {
   padding: 0; 
 }
 
+#postBtn{
+  padding: 4px 8px;
+}
 ::-webkit-scrollbar {
   width: 6px; 
   height: 60px; 
@@ -22,11 +25,11 @@ body {
 }
 
 ::-webkit-scrollbar-track:hover {
-  background-color: rgb(78, 76, 229);
+  background-color: rgb(110, 105, 231);
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #888;
+  background: #dd0d0d;
   border-radius: 10px;
 }
 
